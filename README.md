@@ -1,3 +1,5 @@
+# Project: Fintechtop Nestjs Backend
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -58,7 +60,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-# Project: Fintechtop Nestjs Backend
 
 ## End-point: http://localhost:3000/api/goals POST
 ### Method: POST
