@@ -58,6 +58,178 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+# Project: Fintechtop Nestjs Backend
+
+## End-point: http://localhost:3000/api/goals POST
+### Method: POST
+>```
+>http://localhost:3000/api/goals
+>```
+### Body (**raw**)
+
+```json
+{
+  "name": "Vacaciones",
+  "targetAmount": 23000
+}
+```
+
+### 🔑 Authentication noauth
+
+|Param|value|Type|
+|---|---|---|
+
+
+### Response: 201
+```json
+{
+    "name": "Vacaciones 5",
+    "targetAmount": 230070,
+    "createdAt": "2025-02-13T19:41:23.514Z",
+    "id": "q3JgQM03hybVzWATPG3t"
+}
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: http://localhost:3000/api/deposits POST
+### Method: POST
+>```
+>http://localhost:3000/api/deposits/
+>```
+### Body (**raw**)
+
+```json
+{
+  "amount": 300,
+  "goalId": "9Xpn398XcCJqtIKXQ9VN"
+}
+
+```
+
+### 🔑 Authentication noauth
+
+|Param|value|Type|
+|---|---|---|
+
+
+### Response: 201
+```json
+{
+    "amount": 300,
+    "goalId": "q3JgQM03hybVzWATPG3t",
+    "createdAt": "2025-02-13T19:41:47.238Z",
+    "id": "ooRZneKdpFqryntmYs3m"
+}
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: http://localhost:3000/api/deposits GET
+### Method: GET
+>```
+>http://localhost:3000/api/deposits/9Xpn398XcCJqtIKXQ9VN
+>```
+### Body (**raw**)
+
+```json
+
+```
+
+### 🔑 Authentication noauth
+
+|Param|value|Type|
+|---|---|---|
+
+
+### Response: 200
+```json
+[
+    {
+        "amount": 300,
+        "goalId": "9Xpn398XcCJqtIKXQ9VN",
+        "createdAt": {
+            "_seconds": 1739475498,
+            "_nanoseconds": 659000000
+        }
+    },
+    {
+        "amount": 300,
+        "goalId": "9Xpn398XcCJqtIKXQ9VN",
+        "createdAt": {
+            "_seconds": 1739475298,
+            "_nanoseconds": 131000000
+        }
+    }
+]
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: http://localhost:3000/api/goals GET
+### Method: GET
+>```
+>http://localhost:3000/api/goals
+>```
+### Body (**raw**)
+
+```json
+
+```
+
+### 🔑 Authentication noauth
+
+|Param|value|Type|
+|---|---|---|
+
+
+### Response: 200
+```json
+[
+    {
+        "name": "Vacaciones 2",
+        "targetAmount": 23000,
+        "createdAt": {
+            "_seconds": 1739475223,
+            "_nanoseconds": 334000000
+        }
+    },
+    {
+        "name": "Vacaciones 3",
+        "targetAmount": 24000,
+        "createdAt": {
+            "_seconds": 1739475506,
+            "_nanoseconds": 849000000
+        }
+    },
+    {
+        "name": "Vacaciones 5",
+        "targetAmount": 230070,
+        "createdAt": {
+            "_seconds": 1739475683,
+            "_nanoseconds": 514000000
+        }
+    },
+    {
+        "name": "Vacaciones",
+        "targetAmount": 23000,
+        "createdAt": {
+            "_seconds": 1739473683,
+            "_nanoseconds": 9000000
+        }
+    }
+]
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+_________________________________________________
+Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
+
+
 ## Deployment
 
 When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
